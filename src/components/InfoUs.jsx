@@ -71,7 +71,7 @@ const InfoUs = () => {
     return (
         <>
         <div className="card-gen-infoUs">
-        <h1>Información del Usuario</h1>
+            <h1>Información del Usuario</h1>
             <div className="card-infoUs">
                 <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
                     <div style={{ height: "60vh", width: "100%", borderRadius: "15px", overflow: "hidden" }}>

@@ -129,7 +129,7 @@
   background-color: var(--navbar-bg-color);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 92%;
   padding: 1rem;
   flex-direction: column;
   align-items: flex-start;
@@ -184,6 +184,7 @@ body.dark-mode {
   justify-content: center;
   gap: 1rem; /* Espacio entre las columnas */
   padding: 1rem;
+  margin-top: -2rem;
 }
 
 .description {
@@ -250,6 +251,7 @@ body.dark-mode {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+  margin-top: -1rem;
 }
 
 .infoUs {
@@ -263,7 +265,7 @@ body.dark-mode {
   margin-bottom: 0.5rem; /* Espacio entre renglones */
   font-size: 1.1rem;
   color: var(--body-text-color);
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .infoUs h1 {
@@ -380,8 +382,12 @@ body.dark-mode {
     gap: 1rem; /* Ajusta el espacio entre los elementos en modo columna */
   }
 
+  .card-cel-title {
+    font-size: 0.7rem; 
+  }
+
   .card-gen-infoUs {
-    min-width: 400px; /* Ajusta el ancho en pantallas pequeñas */
+    min-width: 200px; /* Ajusta el ancho en pantallas pequeñas */
     padding: 0.5rem; /* Ajusta el padding en pantallas pequeñas */
   }
 
