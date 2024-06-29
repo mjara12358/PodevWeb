@@ -1,0 +1,401 @@
+#root {
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.inicio-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem; /* Espacio entre las columnas */
+  padding: 1rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Espacio entre las columnas */
+  padding: 1rem;
+}
+
+.title-text {
+  color: var(--body-text-color);
+  font-size: 3rem; /* Tamaño del texto */
+}
+
+.title:hover {
+  filter: drop-shadow(0 0 2em #5cc3cd);
+}
+
+.logo {
+  height: 8em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.read-the-docs {
+  color: #888888;
+}
+
+.inicio-text {
+  padding: 0.5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0.3rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit;
+}
+
+.brand:hover {
+  color: #57bfc9;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-link:hover {
+  color: #57bfc9;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: inherit;
+  width: 30px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Estilo para el botón de menú en pantallas pequeñas */
+.menu-toggle {
+  display: none;
+}
+
+/* Estilo para el menú desplegable */
+.menu-mobile {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--navbar-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Mostrar el menú desplegable cuando se activa */
+.menu-mobile.active {
+  display: flex;
+}
+
+body.light-mode {
+  --navbar-bg-color: #2C046E;
+  --navbar-text-color: #ffffff;
+  --body-text-color: #000000;
+  --body-bg-color-card: #ffffff;
+  --background-color-button: #2C046E;
+  --background-color-button-text: #ffffff;
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.dark-mode {
+  --navbar-bg-color: #2C046E;
+  --navbar-text-color: #ffffff;
+  --body-text-color: #ffffff;
+  --body-bg-color-card: #333;
+  --background-color-button: #ffffff;
+  --background-color-button-text: #000000;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.card-gen {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  background-color: var(--body-bg-color-card);
+}
+
+.card-cel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem; /* Espacio entre las columnas */
+  padding: 1rem;
+}
+
+.card-cel-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Espacio entre las columnas */
+  padding: 1rem;
+}
+
+.description {
+  flex: 1;
+  padding: 1rem;
+}
+
+.description p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--body-text-color);
+  max-width: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna */
+  align-items: flex-start; /* Alinear a la izquierda */
+  gap: 0.5rem;
+}
+
+.cel-input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: var(--body-bg-color-card);
+  color: var(--body-text-color);
+  width: 250px;
+  font-size: 1rem; 
+}
+
+.submit-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--background-color-button);
+  color: var(--background-color-button-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 270px;
+}
+
+.submit-button:hover {
+  background-color: #57bfc9;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.card-gen-infoUs {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--body-bg-color-card);
+  overflow: hidden;
+  min-width: 1000px;
+}
+
+.card-infoUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.infoUs {
+  flex: 0;
+  padding: 1rem;
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.infoUs p {
+  margin: 0;
+  margin-bottom: 0.5rem; /* Espacio entre renglones */
+  font-size: 1.1rem;
+  color: var(--body-text-color);
+  min-width: 300px;
+}
+
+.infoUs h1 {
+  text-align: center; /* Centrar el título */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem; /* Espacio encima del botón */
+}
+
+.exit-button {
+  padding: 0.5rem 3rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.exit-button:hover {
+  background-color: darkred;
+}
+
+.InfoWindow {
+  font-size: 1.1rem;
+  color: #000000
+}
+
+.footer {
+  position: fixed;
+  margin-top: auto;
+  bottom: 0; /* Alinea el footer a la parte inferior de la ventana */
+  left: 0.5rem; /* Alinea el footer al borde izquierdo */
+  right: 0.5rem; /* Alinea el footer al borde derecho */
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-bottom: none; /* Elimina el borde inferior */
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+  border-top-left-radius: 20px; /* Esquinas redondeadas superiores */
+  border-top-right-radius: 20px; /* Esquinas redondeadas superiores */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra hacia arriba */
+}
+
+.footerText {
+  width: 100%;
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem; /* Add space above the GIF */
+}
+
+.animated-gif {
+  width: 300px; /* Set a medium width for the GIF */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.animated-gif-infoUs {
+  width: 150px; /* Set a medium width for the GIF */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.medium-image {
+  width: 200px; /* Set a medium width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+@media screen and (max-width: 768px) {
+  .title-text {
+    font-size: 2rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+  }
+
+  .logo {
+    height: 6em; /* Ajusta el tamaño del logo en pantallas pequeñas */
+  }
+
+  .inicio-conteiner {
+    flex-direction: column; /* Cambia a diseño de columna en pantallas pequeñas */
+    gap: 1rem; /* Ajusta el espacio entre los elementos en modo columna */
+  }
+
+  .inicio-text {
+    padding: 0.5rem; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .menu {
+    display: none; /* Ocultar el menú en pantallas pequeñas */
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar el botón de menú en pantallas pequeñas */
+    background-color: var(--navbar-bg-color);
+  }
+
+  .card-cel {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    gap: 1rem; /* Ajusta el espacio entre los elementos en modo columna */
+  }
+
+  .card-gen-infoUs {
+    min-width: 400px; /* Ajusta el ancho en pantallas pequeñas */
+    padding: 0.5rem; /* Ajusta el padding en pantallas pequeñas */
+  }
+
+  .card-infoUs {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    gap: 1rem; /* Ajusta el espacio entre los elementos en modo columna */
+  }
+
+  .footer {
+    flex-direction: column; /* Cambia a diseño en columna en pantallas pequeñas */
+    text-align: center; /* Centra el texto */
+    padding: 1rem; /* Reduce el padding */
+  }
+}
+
+
+
