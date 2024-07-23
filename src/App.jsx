@@ -25,7 +25,7 @@ return (
   </div>  
   <div className="inicio-text">
       <p>Podev Web es el complemento ideal para la Podev App, diseñado especialmente para 
-        los familiares de los usuarios ciegos que utilizan la aplicación. Este complemento 
+        los familiares de los usuarios con discapacidad visual que utilizan la aplicación. Este complemento 
         web proporciona herramientas esenciales para que los familiares puedan obtener 
         información precisa sobre la ubicación de sus seres queridos. De esta manera, 
         podrán estar al tanto de su paradero en todo momento, brindando una mayor 

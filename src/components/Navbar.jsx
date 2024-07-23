@@ -26,7 +26,7 @@ const Navbar = () => {
             <a href="/" className="brand">Podev Web</a>
             <ul className={`menu-mobile ${menuOpen ? 'active' : ''}`}>
                 <li className="menu-item">
-                    <a className="menu-link" href="/CardEmail">
+                    <a className="menu-link" href="/CardCel">
                         <IdentificationIcon className="icon" />
                         Consultar Usuario
                     </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
             </ul>
             <ul className="menu">
                 <li className="menu-item">
-                    <a className="menu-link" href="/CardEmail">
+                    <a className="menu-link" href="/CardCel">
                         <IdentificationIcon className="icon" />
                         Consultar Usuario
                     </a>

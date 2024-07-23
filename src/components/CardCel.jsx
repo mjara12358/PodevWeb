@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import podevLogo from '/src/assets/podevsinfondo.png'
 import myImage from '/src/assets/imgLogoMap2.png';
 
-const CardEmail = () => {
+const CardCel = () => {
 
     const [phoneNumber, setPhoneNumber] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
@@ -59,4 +59,4 @@ const CardEmail = () => {
     )
 }
 
-export default CardEmail
+export default CardCel
